@@ -1,14 +1,15 @@
+//tohle bude nasatveno z bat souboru, ktery bude volat openscad pro kazdy svg soubor v adresari a generovat stl soubory
 svg_file = "";
-scale_factor = 2.8;
-height = 5;
+height = 0;
+add_handle = false;
 
-add_handle = true;
+handle_x = 0;
+handle_y = 0;
 
 handle_diameter = 14;
 handle_height = 25;
 
-handle_x = 0;
-handle_y = 0;
+scale_factor = 2.8;
 
 module base_shape() {
     offset(delta = 0.01)
